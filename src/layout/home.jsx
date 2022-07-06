@@ -1,6 +1,7 @@
-import { HomeOutlined } from "@ant-design/icons";
+import { HomeOutlined, AppstoreOutlined, TeamOutlined  } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import React from "react";
+import  {Row, Col} from 'react-bootstrap';
 const { Header, Content, Footer, Sider } = Layout;
 
 const home = () => {
@@ -32,6 +33,12 @@ const home = () => {
             <Menu.Item key="1" icon={<HomeOutlined />}>
               Home
             </Menu.Item>
+            <Menu.Item key="1" icon={<AppstoreOutlined />}>
+              Proyectos
+            </Menu.Item>
+            <Menu.Item key="1" icon={<TeamOutlined /> }>
+              Sobre Nosotros
+            </Menu.Item>
           </Menu>
         </Sider>
         <Layout>
@@ -43,10 +50,12 @@ const home = () => {
           /> */}
           <Content
             style={{
-              margin: "24px 16px 0",
+              margin: "15px",
               textAlign: "center",
               fontSize: "40px",
-            }}
+              padding: "10px",
+              backgroundColor: "#001529",
+            }} 
           >
             <div
               className="site-layout-background"
@@ -55,12 +64,13 @@ const home = () => {
                 minHeight: 360,
               }}
             >
-              <h1>Gova arquitectos</h1>
+              <h1 style={{color:"grey"}}>Gova arquitectos</h1>
               <p
                 style={{
                   margin: "24px 16px 0",
                   textAlign: "center",
                   fontSize: "15px",
+                  color: "grey",
                 }}
               >
                 Comming soon
@@ -73,11 +83,16 @@ const home = () => {
               fontSize: "13px",
             }}
           >
-            <p>Carrer de les Garrigues 8, Piso 01 Puerta 01</p>
-            <p>Valencia – España</p>
-            <p>govaarquitectos@gmail.com </p>
-            <p>+54 9 381 5721009 // +54 9 381 4949301</p>
-            <p> @gova.arquitecos</p>
+            <Row>
+              <Col>Carrer de les Garrigues 8, Piso 01 Puerta 01 (Valencia – España)</Col>
+              <Col>govaarquitectos@gmail.com // @gova.arquitecos </Col>
+              <Col> +54 9 381 5721009 // +54 9 381 4949301</Col>
+            </Row>
+            
+          
+            
+           
+            
           </Footer>
         </Layout>
       </Layout>
