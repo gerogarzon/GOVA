@@ -26,7 +26,7 @@ const home = () => {
               minHeight: 360,
             }}
           >
-            <h1>Gova arquitectos</h1>
+            <h1 style={{fontSize:"50px"}}>Gova arquitectos</h1>
             <p
               style={{
                 margin: "24px",
