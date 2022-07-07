@@ -1,51 +1,50 @@
-
-import { Layout } from "antd";
 import React from "react";
-import { Row, Col } from "react-bootstrap";
-const { Content } = Layout;
+import { Row, Col, Container } from "react-bootstrap";
 
 const home = () => {
   return (
     <>
-      <Layout
+      <Container
+        fluid
         style={{
-          height: "100vh",
+          textAlign: "center",
+          marginTop: "60px",
         }}
       >
-        <Content
-          style={{
-        
-            textAlign: "center",
-            fontSize: "20px",
-            backgroundColor: "white",
-          }}
-        >
-          <div
-            style={{
-              margin:"60px",
-              minHeight: 360,
-            }}
-          >
-            <h1 style={{fontSize:"50px"}}>Gova arquitectos</h1>
-            <p
-              style={{
-                margin: "24px",
-                textAlign: "center",
-              }}
-            >
-              Comming soon
-            </p>
-          </div>
-          
-          <Row>
-            <Col>
+        <Row>
+          <Col>
+            <h1>Gova Arquitectos</h1>
+            <p>Coming Soon</p>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container
+        fluid
+        style={{
+          textAlign: "center",
+          marginTop: "100px",
+        }}
+      >
+        <Row>
+          <h3>Contact us:</h3>
+          <Col>
+            <p>
               Carrer de les Garrigues 8, Piso 01 Puerta 01 (Valencia – España)
-            </Col>
-            <Col>govaarquitectos@gmail.com // @gova.arquitecos </Col>
-            <Col> +54 9 381 5721009 // +54 9 381 4949301</Col>
-          </Row>
-        </Content>
-      </Layout>
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p>govaarquitectos@gmail.com // @gova.arquitecos</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p>+54 9 381 5721009 // +54 9 381 4949301</p>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
