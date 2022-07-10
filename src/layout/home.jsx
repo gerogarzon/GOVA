@@ -8,7 +8,7 @@ const home = () => {
         fluid
         style={{
           textAlign: "center",
-          marginTop: "60px",
+          marginTop: "150px",
         }}
       >
         <Row>
@@ -23,7 +23,7 @@ const home = () => {
         fluid
         style={{
           textAlign: "center",
-          marginTop: "100px",
+          marginTop: "300px",
         }}
       >
         <Row>
