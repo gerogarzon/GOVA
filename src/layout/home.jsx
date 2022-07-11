@@ -42,9 +42,8 @@ const home = () => {
         >
           <Col>
             <h3>Visit us:</h3>
-            <div>
-              Carrer de les Garrigues 8, Piso 01 Puerta 01 (Valencia–España)
-            </div>
+            <div>Carrer de les Garrigues 8, Piso 01 Puerta 01</div>
+            <div>Valencia–España</div>
           </Col>
         </Row>
       </Container>
